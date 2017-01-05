@@ -1,0 +1,30 @@
+#KBPweathersystem
+#Work In-Progress
+#KBPweatherSystem #Created: 12/22/2016
+
+#This is the Header
+print ("""=====KBPweatherSystems=====
+\n
+\n
+\n
+""")
+#import time module
+from time import gmtime, strftime
+
+#print the current time today
+print strftime("%m-%d-%Y %H:%M:%S", gmtime())
+print("""\n""")
+
+#ask user input
+w1 = raw_input('Monday Temperature: \n')
+w2 = raw_input('Tuesday Temperature: \n')
+w3 = raw_input('Wednesday Temperature: \n')
+#convert inputs from user to integer
+w11 = int(w1)
+w21 = int(w2)
+w31 = int(w3)
+#Do the math
+ave_weather = (w11 + w21 + w31) / 3
+#Print result
+print 'Total average temperature of weather from Monday to Wednesday is %d' % ave_weather
+
